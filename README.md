@@ -20,6 +20,14 @@ Este repositório contém implementações de algoritmos e estruturas de dados f
 - **Tecnologias**: Java
 - **Conceitos**: Algoritmos, Hash Tables, Otimização
 
+### 🏛️ [Roman to Integer](./roman-to-int/)
+**Conversor de Números Romanos**
+- Algoritmo eficiente para conversão de números romanos para inteiros
+- Implementa regras de subtração (IV=4, IX=9, XL=40, etc.)
+- Processamento linear com análise de caracteres adjacentes
+- **Tecnologias**: Java
+- **Conceitos**: String Processing, Switch Statements, Algoritmos
+
 ### 🚦 [Rate Limiter](./rate-limiter/)
 **Algoritmos de Rate Limiting**
 - **Sliding Window**: Controle preciso com timestamps
@@ -75,6 +83,7 @@ java TwoSums
 | **LRU Cache** | LinkedHashMap | O(1) | O(n) | ⭐⭐ |
 | **Two Sums** | Hash Table | O(n) | O(n) | ⭐ |
 | **Two Sums** | Força Bruta | O(n²) | O(1) | ⭐ |
+| **Roman to Integer** | String Processing | O(n) | O(1) | ⭐ |
 | **Rate Limiter** | Sliding Window | O(n) | O(n) | ⭐⭐⭐ |
 | **Rate Limiter** | Token Bucket | O(1) | O(1) | ⭐⭐⭐ |
 | **Concurrency** | Producer-Consumer | - | O(k) | ⭐⭐ |
@@ -89,6 +98,7 @@ java TwoSums
 
 ### Algoritmos
 - **Busca**: Hash-based lookup, Linear search
+- **String Processing**: Roman numeral parsing, Character analysis
 - **Cache**: LRU eviction, Access patterns
 - **Rate Limiting**: Sliding window, Token bucket
 
@@ -106,6 +116,7 @@ java TwoSums
 
 ### ⭐ Iniciante
 - **Two Sums**: Problema fundamental de arrays e hash tables
+- **Roman to Integer**: Processamento de strings e lógica condicional
 - Conceitos básicos de otimização algorítmica
 
 ### ⭐⭐ Intermediário

@@ -1,169 +1,170 @@
-# Desafios de Entrevista Técnica
+# 🚀 Desafios de Entrevista Técnica
 
-Este repositório contém implementações de algoritmos e estruturas de dados fundamentais, organizados por tópicos e comumente utilizados em entrevistas técnicas para posições de desenvolvimento de software.
+[![Java](https://img.shields.io/badge/language-Java-blue.svg)](https://www.java.com/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-## 📁 Estrutura do Projeto
-
-### 🧮 [Algorithms](./algorithms/)
-**LRU Cache Implementation**
-- Implementação elegante usando herança de `LinkedHashMap`
-- Cache com remoção automática do elemento menos recentemente usado
-- Demonstra uso inteligente de estruturas de dados existentes
-- **Tecnologias**: Java, Maven, JUnit
-- **Conceitos**: Herança, Generics, Data Structures
-
-### ➕ [Two Sums](./two-sums/)
-**Problema Clássico Two Sum**
-- Duas soluções: Força Bruta O(n²) vs Hash Table O(n)
-- Análise comparativa de complexidade e performance
-- Exemplo fundamental de otimização algorítmica
-- **Tecnologias**: Java
-- **Conceitos**: Algoritmos, Hash Tables, Otimização
-
-### 🏛️ [Roman to Integer](./roman-to-int/)
-**Conversor de Números Romanos**
-- Algoritmo eficiente para conversão de números romanos para inteiros
-- Implementa regras de subtração (IV=4, IX=9, XL=40, etc.)
-- Processamento linear com análise de caracteres adjacentes
-- **Tecnologias**: Java
-- **Conceitos**: String Processing, Switch Statements, Algoritmos
-
-### 🚦 [Rate Limiter](./rate-limiter/)
-**Algoritmos de Rate Limiting**
-- **Sliding Window**: Controle preciso com timestamps
-- **Token Bucket**: Permite burst com reabastecimento
-- Implementações thread-safe para sistemas distribuídos
-- **Tecnologias**: Java, Maven, JUnit
-- **Conceitos**: Concorrência, Rate Limiting, Thread Safety
-
-### 🧵 [Concurrency](./concurrency/)
-**Padrões de Concorrência**
-- **Producer-Consumer**: Coordenação com BlockingQueue
-- **Simple Thread Pool**: Execução paralela com workers
-- Implementações com graceful shutdown e resource management
-- **Tecnologias**: Java, Maven, JUnit
-- **Conceitos**: Multi-threading, Synchronization, Design Patterns
-
-## 🎯 Objetivos do Repositório
-
-Este repositório foi criado para:
-
-- **📚 Estudo**: Referência para algoritmos fundamentais
-- **💼 Entrevistas**: Preparação para entrevistas técnicas
-- **🔧 Implementação**: Exemplos práticos de código limpo
-- **📖 Educação**: Documentação detalhada com explicações
-
-## 🚀 Como Usar
-
-### Pré-requisitos
-- **Java 17+**
-- **Maven 3.6+**
-
-### Executando os Projetos
-
-#### Projetos Maven (algorithms, rate-limiter, concurrency)
-```bash
-cd <projeto>
-mvn compile
-mvn exec:java -Dexec.mainClass="<MainClass>"
-mvn test
-```
-
-#### Projetos Java Simples (two-sums, roman-to-int)
-```bash
-# Two Sums
-cd two-sums
-javac TwoSums.java
-java TwoSums
-
-# Roman to Integer
-cd roman-to-int
-javac RomanToInt.java
-java RomanToInt
-```
-
-## 📊 Complexidade dos Algoritmos
-
-| Projeto | Algoritmo | Tempo | Espaço | Dificuldade |
-|---------|-----------|-------|--------|-------------|
-| **LRU Cache** | LinkedHashMap | O(1) | O(n) | ⭐⭐ |
-| **Two Sums** | Hash Table | O(n) | O(n) | ⭐ |
-| **Two Sums** | Força Bruta | O(n²) | O(1) | ⭐ |
-| **Roman to Integer** | String Processing | O(n) | O(1) | ⭐ |
-| **Rate Limiter** | Sliding Window | O(n) | O(n) | ⭐⭐⭐ |
-| **Rate Limiter** | Token Bucket | O(1) | O(1) | ⭐⭐⭐ |
-| **Concurrency** | Producer-Consumer | - | O(k) | ⭐⭐ |
-| **Concurrency** | Thread Pool | - | O(n) | ⭐⭐⭐ |
-
-## 🎓 Conceitos Abordados
-
-### Estruturas de Dados
-- **Hash Tables**: HashMap, LinkedHashMap
-- **Queues**: ArrayDeque, BlockingQueue, LinkedBlockingQueue
-- **Collections**: Generics, Iterator patterns
-
-### Algoritmos
-- **Busca**: Hash-based lookup, Linear search
-- **String Processing**: Roman numeral parsing, Character analysis
-- **Cache**: LRU eviction, Access patterns
-- **Rate Limiting**: Sliding window, Token bucket
-
-### Concorrência
-- **Thread Safety**: Synchronized, AtomicLong, volatile
-- **Patterns**: Producer-Consumer, Thread Pool
-- **Resource Management**: AutoCloseable, Graceful shutdown
-
-### Design Patterns
-- **Template Method**: removeEldestEntry override
-- **Factory**: Thread creation patterns
-- **Resource Management**: try-with-resources
-
-## 📈 Níveis de Dificuldade
-
-### ⭐ Iniciante
-- **Two Sums**: Problema fundamental de arrays e hash tables
-- **Roman to Integer**: Processamento de strings e lógica condicional
-- Conceitos básicos de otimização algorítmica
-
-### ⭐⭐ Intermediário
-- **LRU Cache**: Uso avançado de estruturas de dados
-- **Producer-Consumer**: Introdução à concorrência
-
-### ⭐⭐⭐ Avançado
-- **Rate Limiter**: Algoritmos para sistemas distribuídos
-- **Thread Pool**: Gerenciamento avançado de concorrência
-
-## 🔗 Links Úteis
-
-- [Java Documentation](https://docs.oracle.com/en/java/)
-- [Maven Getting Started](https://maven.apache.org/guides/getting-started/)
-- [JUnit 5 User Guide](https://junit.org/junit5/docs/current/user-guide/)
-- [Java Concurrency in Practice](https://jcip.net/)
-
-## 📝 Próximos Passos
-
-Possíveis extensões para este repositório:
-
-- **🌳 Tree Algorithms**: Binary Search Tree, AVL, Red-Black
-- **📊 Graph Algorithms**: BFS, DFS, Dijkstra, A*
-- **🔄 Sorting**: QuickSort, MergeSort, HeapSort
-- **🧮 Dynamic Programming**: Fibonacci, Knapsack, LCS
-- **🌐 Distributed Systems**: Consistent Hashing, Raft Algorithm
-
-## 🤝 Contribuições
-
-Contribuições são bem-vindas! Por favor:
-
-1. Fork o repositório
-2. Crie uma branch para sua feature
-3. Adicione testes para novas implementações
-4. Mantenha a documentação atualizada
-5. Submeta um Pull Request
-
-## 📄 Licença
-
-Este projeto é open source e está disponível sob a [MIT License](LICENSE).
+> Coleção abrangente de algoritmos, estruturas de dados e boas práticas para preparação em entrevistas técnicas de desenvolvimento de software.
 
 ---
 
-*Desenvolvido para estudo e preparação para entrevistas técnicas. Cada implementação inclui análise de complexidade, casos de uso e boas práticas de desenvolvimento.*
+## 📁 Estrutura do Repositório
+
+### 🧮 [Códigos](./codigos/)
+**Algoritmos e Estruturas de Dados Fundamentais**
+
+Implementações completas com análise de complexidade e múltiplas abordagens:
+
+- **[LRU Cache](./codigos/algorithms/)** - Cache inteligente com LinkedHashMap
+- **[Two Sums](./codigos/two-sums/)** - Força bruta vs Hash Table O(n²) → O(n)
+- **[Roman to Integer](./codigos/roman-to-int/)** - Conversão eficiente de números romanos
+- **[Fibonacci](./codigos/fibonnaci/)** - 4 implementações: Recursiva, Memoização, DP, Otimizada
+- **[Rate Limiter](./codigos/rate-limiter/)** - Sliding Window e Token Bucket
+- **[Concurrency](./codigos/concurrency/)** - Producer-Consumer e Thread Pool
+
+### 📚 [Extras](./extras/)
+**Materiais Complementares**
+
+- **[Clean Code](./extras/clean-code/)** - Resumo prático dos princípios de código limpo
+
+---
+
+## 🎯 Objetivos
+
+Este repositório foi criado para:
+
+- **📖 Estudo**: Referência completa de algoritmos fundamentais
+- **💼 Entrevistas**: Preparação estruturada para entrevistas técnicas
+- **🔧 Implementação**: Exemplos de código limpo e bem documentado
+- **📊 Análise**: Comparação de complexidades e trade-offs
+
+---
+
+## 🚀 Quick Start
+
+### Pré-requisitos
+- **Java 17+**
+- **Maven 3.6+** (para projetos com dependências)
+
+### Executar Algoritmos
+
+```bash
+# Algoritmos simples
+cd codigos/<projeto>
+javac *.java
+java <MainClass>
+
+# Projetos Maven
+cd codigos/<projeto>
+mvn compile exec:java
+mvn test
+```
+
+### Exemplos Rápidos
+
+```bash
+# Fibonacci com múltiplas implementações
+cd codigos/fibonnaci
+javac Fibonacci.java
+java Fibonacci
+
+# Two Sums - comparação de abordagens
+cd codigos/two-sums
+javac TwoSums.java
+java TwoSums
+
+# LRU Cache com testes
+cd codigos/algorithms
+mvn test
+```
+
+---
+
+## 📊 Visão Geral dos Algoritmos
+
+| Projeto | Melhor Caso | Pior Caso | Espaço | Nível |
+|---------|-------------|-----------|--------|-------|
+| **Two Sums** | O(n) | O(n²) | O(n) | ⭐ |
+| **Roman to Int** | O(n) | O(n) | O(1) | ⭐ |
+| **Fibonacci** | O(n) | O(2^n) | O(1) | ⭐⭐ |
+| **LRU Cache** | O(1) | O(1) | O(n) | ⭐⭐ |
+| **Rate Limiter** | O(1) | O(n) | O(n) | ⭐⭐⭐ |
+| **Concurrency** | - | - | O(n) | ⭐⭐⭐ |
+
+---
+
+## 🎓 Níveis de Aprendizado
+
+### ⭐ **Iniciante**
+Conceitos fundamentais de algoritmos e estruturas de dados
+- Arrays, Hash Tables, String Processing
+- Análise básica de complexidade
+- Otimização simples
+
+### ⭐⭐ **Intermediário** 
+Técnicas avançadas de otimização
+- Memoização e Programação Dinâmica
+- Estruturas de dados especializadas
+- Design patterns básicos
+
+### ⭐⭐⭐ **Avançado**
+Sistemas distribuídos e concorrência
+- Thread safety e sincronização
+- Rate limiting para alta escala
+- Arquiteturas robustas
+
+---
+
+## 🔗 Navegação Rápida
+
+### Por Conceito
+- **Recursão**: [Fibonacci](./codigos/fibonnaci/)
+- **Hash Tables**: [Two Sums](./codigos/two-sums/)
+- **String Processing**: [Roman to Integer](./codigos/roman-to-int/)
+- **Cache**: [LRU Cache](./codigos/algorithms/)
+- **Concorrência**: [Rate Limiter](./codigos/rate-limiter/), [Concurrency](./codigos/concurrency/)
+
+### Por Complexidade
+- **O(1)**: LRU Cache, Token Bucket
+- **O(n)**: Two Sums (otimizado), Fibonacci (otimizado)
+- **O(n²)**: Two Sums (força bruta)
+- **O(2^n)**: Fibonacci (recursivo)
+
+---
+
+## 📈 Próximos Tópicos
+
+Extensões planejadas:
+- **🌳 Árvores**: BST, AVL, Red-Black
+- **📊 Grafos**: BFS, DFS, Dijkstra
+- **🔄 Ordenação**: QuickSort, MergeSort
+- **🧮 DP Avançado**: Knapsack, LCS
+
+---
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! 
+
+1. Fork o repositório
+2. Crie uma branch: `git checkout -b feature/nova-implementacao`
+3. Commit suas mudanças: `git commit -m 'Add: nova implementação'`
+4. Push para a branch: `git push origin feature/nova-implementacao`
+5. Abra um Pull Request
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 🎯 Sobre
+
+Desenvolvido para estudo e preparação para entrevistas técnicas. Cada implementação inclui:
+
+- ✅ **Código limpo** e bem documentado
+- ✅ **Análise de complexidade** detalhada
+- ✅ **Múltiplas abordagens** quando aplicável
+- ✅ **Casos de teste** e exemplos práticos
+- ✅ **Documentação** educativa

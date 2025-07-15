@@ -69,11 +69,17 @@ mvn exec:java -Dexec.mainClass="<MainClass>"
 mvn test
 ```
 
-#### Projeto Java Simples (two-sums)
+#### Projetos Java Simples (two-sums, roman-to-int)
 ```bash
+# Two Sums
 cd two-sums
 javac TwoSums.java
 java TwoSums
+
+# Roman to Integer
+cd roman-to-int
+javac RomanToInt.java
+java RomanToInt
 ```
 
 ## 📊 Complexidade dos Algoritmos

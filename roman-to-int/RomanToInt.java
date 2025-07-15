@@ -12,45 +12,45 @@ public class RomanToInt {
         int resultado = 0;
 
         for (int i = 0; i < s.length(); i++) {
-            switch (s.charAt(i)) {
-                case 'I':
-                    if (i + 1 < s.length() && (s.charAt(i + 1) == 'V' || s.charAt(i + 1) == 'X')) {
-                        resultado -= 1;
-                    } else {
-                        resultado += 1;
-                    }
-                    break;
-                case 'V':
-                    resultado += 5;
-                    break;
-                case 'X':
-                    if (i + 1 < s.length() && (s.charAt(i + 1) == 'L' || s.charAt(i + 1) == 'C')) {
-                        resultado -= 10;
-                    } else {
-                        resultado += 10;
-                    }
-                    break;
-                case 'L':
-                    resultado += 50;
-                    break;
-                case 'C':
-                    if (i + 1 < s.length() && (s.charAt(i + 1) == 'D' || s.charAt(i + 1) == 'M')) {
-                        resultado -= 100;
-                    } else {
-                        resultado += 100;
-                    }
-                    break;
-                case 'D':
-                    resultado += 500;
-                    break;
-                case 'M':
-                    resultado += 1000;
-                    break;
-                default:
-                    break;
+            int currentValue = getRomanValue(s.charAt(i));
+
+            if (shouldSubtract(s, i)) {
+                resultado -= currentValue;
+            } else {
+                resultado += currentValue;
             }
         }
 
         return resultado;
+    }
+
+    private int getRomanValue(char romanChar) {
+        switch (romanChar) {
+            case 'I': return 1;
+            case 'V': return 5;
+            case 'X': return 10;
+            case 'L': return 50;
+            case 'C': return 100;
+            case 'D': return 500;
+            case 'M': return 1000;
+            default: return 0;
+        }
+    }
+
+    private boolean shouldSubtract(String s, int index) {
+        if (index + 1 >= s.length()) {
+            return false;
+        }
+
+        char current = s.charAt(index);
+        char next = s.charAt(index + 1);
+
+        return isSubtractionCase(current, next);
+    }
+
+    private boolean isSubtractionCase(char current, char next) {
+        return (current == 'I' && (next == 'V' || next == 'X')) ||
+               (current == 'X' && (next == 'L' || next == 'C')) ||
+               (current == 'C' && (next == 'D' || next == 'M'));
     }
 }

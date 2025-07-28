@@ -1,0 +1,78 @@
+# Configuração da aplicação RESTful API
+spring:
+  application:
+    name: restful-api-example
+  
+  # Configuração do banco H2 (desenvolvimento)
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  
+  # Configuração JPA/Hibernate
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  
+  # Console H2 (apenas desenvolvimento)
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  
+  # Configuração de validação
+  validation:
+    enabled: true
+
+# Configuração do servidor
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  error:
+    include-message: always
+    include-binding-errors: always
+
+# Configuração de logging
+logging:
+  level:
+    com.example.restapi: DEBUG
+    org.springframework.web: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+# Configuração do OpenAPI/Swagger
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+  show-actuator: true
+
+# Configuração de CORS
+cors:
+  allowed-origins: 
+    - http://localhost:3000
+    - http://localhost:4200
+  allowed-methods:
+    - GET
+    - POST
+    - PUT
+    - PATCH
+    - DELETE
+    - OPTIONS
+  allowed-headers: "*"
+  allow-credentials: true
+
+# Configuração de cache
+cache:
+  users:
+    ttl: 300 # 5 minutos
+    max-size: 1000

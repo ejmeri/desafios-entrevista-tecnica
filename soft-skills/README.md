@@ -75,6 +75,7 @@ Respostas simples e objetivas, focadas no contexto de desenvolvedores.
 ## 🗣 Comunicação
 
 **Pergunta:** Já precisou explicar uma decisão técnica para alguém não técnico?
+
 **Resposta:**
 Em um projeto com o time de produto, precisaram entender por que migrar de REST para GraphQL. Expliquei com exemplos simples que economizaríamos chamadas e reduziríamos carga. O time entendeu bem e apoiou a mudança.
 
@@ -83,6 +84,7 @@ Em um projeto com o time de produto, precisaram entender por que migrar de REST 
 ## 🤝 Trabalho em equipe
 
 **Pergunta:** Como você lida quando discordam de você numa discussão técnica?
+
 **Resposta:**
 Quando sugeri usar Redis para cache e outro dev sugeriu memória local, ouvi os argumentos. Levantamos prós e contras juntos e decidimos por Redis por ser escalável. O foco foi sempre no que era melhor para o projeto.
 
@@ -91,6 +93,7 @@ Quando sugeri usar Redis para cache e outro dev sugeriu memória local, ouvi os 
 ## 🔄 Adaptabilidade e aprendizado
 
 **Pergunta:** Já teve que aprender algo novo rápido?
+
 **Resposta:**
 No início de um projeto com Spring WebFlux, eu nunca tinha usado. Em 3 dias estudei os conceitos reativos e consegui entregar minha parte no prazo com boa qualidade.
 
@@ -99,6 +102,7 @@ No início de um projeto com Spring WebFlux, eu nunca tinha usado. Em 3 dias est
 ## 🧠 Resolução de problemas
 
 **Pergunta:** Me fale de um bug difícil que você resolveu.
+
 **Resposta:**
 Um serviço estava intermitente em produção. Usei logs e tracing para isolar o problema, descobri uma race condition. Refatorei o trecho com `synchronized` e resolvemos sem downtime.
 
@@ -107,6 +111,7 @@ Um serviço estava intermitente em produção. Usei logs e tracing para isolar o
 ## ⏳ Gestão de tempo
 
 **Pergunta:** Como lida com prazos apertados?
+
 **Resposta:**
 Priorizei tarefas pelo impacto. Dividi entregas em etapas, comuniquei os riscos ao time e garanti a entrega do MVP no prazo. Funcionalidades secundárias ficaram para o sprint seguinte.
 
@@ -115,6 +120,7 @@ Priorizei tarefas pelo impacto. Dividi entregas em etapas, comuniquei os riscos 
 ## 🚀 Proatividade
 
 **Pergunta:** Já teve alguma iniciativa fora do combinado?
+
 **Resposta:**
 Notei que o build pipeline falhava por testes instáveis. Investiguei, corrigi os testes flakey e documentei. O CI ficou mais confiável e o time passou a perder menos tempo com falhas falsas.
 
@@ -123,5 +129,6 @@ Notei que o build pipeline falhava por testes instáveis. Investiguei, corrigi o
 ## 🧭 Empatia e ética
 
 **Pergunta:** Já lidou com conflito no time?
+
 **Resposta:**
 Dois devs discordaram sobre arquitetura. Propus uma reunião para alinhar, escutei os dois e ajudei a encontrar um meio-termo. O clima melhorou e seguimos com uma solução consensual.
